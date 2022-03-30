@@ -1302,7 +1302,7 @@
             <Parameter Name="numOfTrueFalse" Mode="In" Type="Int32" />
             <Parameter Name="numOfMCQ" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="GenerateExameByCourseName" ReturnType="Collection(String)">
+          <FunctionImport Name="GenerateExameByCourseName">
             <Parameter Name="Course" Mode="In" Type="String" />
             <Parameter Name="Ins_ID" Mode="In" Type="Int32" />
             <Parameter Name="Std_ID" Mode="In" Type="Int32" />

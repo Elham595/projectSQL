@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\hp\Downloads\project-20220330T115057Z-001\project\login\exam.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Doha\Desktop\ITI\Sql-Server\Project\project\login\project.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

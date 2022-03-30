@@ -329,7 +329,7 @@ namespace login
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("generateExamByCourseID", cIdParameter, insIdParameter, stdIdParameter, numOfTrueFalseParameter, numOfMCQParameter);
         }
     
-        public virtual ObjectResult<string> GenerateExameByCourseName(string course, Nullable<int> ins_ID, Nullable<int> std_ID, Nullable<int> tFNum, Nullable<int> mCQNum)
+        public virtual int GenerateExameByCourseName(string course, Nullable<int> ins_ID, Nullable<int> std_ID, Nullable<int> tFNum, Nullable<int> mCQNum)
         {
             var courseParameter = course != null ?
                 new ObjectParameter("Course", course) :
@@ -351,7 +351,7 @@ namespace login
                 new ObjectParameter("MCQNum", mCQNum) :
                 new ObjectParameter("MCQNum", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("GenerateExameByCourseName", courseParameter, ins_IDParameter, std_IDParameter, tFNumParameter, mCQNumParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("GenerateExameByCourseName", courseParameter, ins_IDParameter, std_IDParameter, tFNumParameter, mCQNumParameter);
         }
     
         public virtual ObjectResult<string> inseretQuestion(Nullable<int> id, Nullable<int> crsId, string qContent, Nullable<int> qGrade, string qType, Nullable<int> ans)

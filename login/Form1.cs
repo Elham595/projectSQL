@@ -29,91 +29,8 @@ namespace login
 
         }
 
-        private void button1_Click(object sender, EventArgs e)//login
-        {
-           
-            string userName = textBox1.Text;
-            int password = int.Parse(textBox2.Text);
 
-
-            var check = ent.Validation(userName, password).FirstOrDefault();
-            if(check=="1")//student
-            {
-                int stdID = (from s in ent.Students where s.U_UserName == userName select s.Std_ID).First();
-                //open student form
-                StudentForm sf = new StudentForm(stdID);
-                sf.Show();
-                this.Hide();
-            }
-            else if(check=="2")//instructor
-            {
-                //Form.show()
-            }
-            else//not registered
-            {
-                MessageBox.Show("User not Registered");
-            }
-            
-        }
-
-
-
-        private void button2_Click(object sender, EventArgs e)//register
-        {
-            var username = textBox3.Text;
-            var u = (from user in ent.Users where user.U_UserName == username select user).First();
-            int gender = comboBox1.SelectedIndex;
-            MessageBox.Show(gender.ToString());
-            string g = " ";
-            if (gender == 1)
-            {
-                g = "M";
-            }
-            else
-            {
-                g = "F";
-            }
-
-
-            if (u == null)//username not used
-            {
-                if (comboBox2.SelectedItem == "Student")//student
-                {
-
-                    ent.userInsert(username, textBox4.Text, textBox5.Text, g, true);
-                }
-                else if (comboBox2.SelectedItem == "Instructor")
-                {
-                    ent.userInsert(username, textBox4.Text, textBox5.Text, g, false);
-                }
-                groupBox3.Visible = false;
-                
-                groupBox2.Visible = true;
-            }
-            else//user name is used
-            {
-                MessageBox.Show("User Name is already used, try different one");
-            }
-               
-                
-            
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button2_Click_1(object sender, EventArgs e)//register 2
         {
@@ -139,6 +56,77 @@ namespace login
             }
         }
 
-      
+        private void button1_Click_1(object sender, EventArgs e)//login
+        {
+
+            string userName = textBox1.Text;
+            int password = int.Parse(textBox2.Text);
+
+
+            var check = ent.Validation(userName, password).First();
+            if (check == "1")//student
+            {
+                int stdID = (from s in ent.Students where s.U_UserName == userName select s.Std_ID).FirstOrDefault();
+                //open student form
+                StudentForm sf = new StudentForm(stdID);
+                sf.Show();
+                this.Hide();
+            }
+            else if (check == "2")//instructor
+            {
+                //Form.show()
+            }
+            else//not registered
+            {
+                MessageBox.Show("User not Registered");
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)//register
+        {
+            var username = textBox3.Text;
+            var u = (from user in ent.Users where user.U_UserName == username select user).FirstOrDefault();
+            int gender = comboBox1.SelectedIndex;
+            string g = " ";
+            if (gender == 1)
+            {
+                g = "M";
+            }
+            else
+            {
+                g = "F";
+            }
+
+
+            if (u == null)//username not used
+            {
+                if (comboBox2.SelectedItem == "Student")//student
+                {
+
+                    ent.userInsert(username, textBox4.Text, textBox5.Text, g, true);
+                }
+                else if (comboBox2.SelectedItem == "Instructor")
+                {
+                    ent.userInsert(username, textBox4.Text, textBox5.Text, g, false);
+                }
+                groupBox3.Visible = false;
+
+                groupBox2.Visible = true;
+            }
+            else//user name is used
+            {
+                MessageBox.Show("User Name is already used, try different one");
+            }
+
+
+
+
+        }
+
+        private void GroupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     } 
 }

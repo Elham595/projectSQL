@@ -274,8 +274,8 @@
     <FunctionImportMapping FunctionImportName="selectIns_Course" FunctionName="examModel.Store.selectIns_Course">
       <ResultMapping>
         <ComplexTypeMapping TypeName="examModel.selectIns_Course_Result">
-          <ScalarProperty Name="Ins_ID" ColumnName="Ins_ID" />
-          <ScalarProperty Name="Crs_ID" ColumnName="Crs_ID" />
+          <ScalarProperty Name="Crs_Name" ColumnName="Crs_Name" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

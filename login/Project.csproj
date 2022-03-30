@@ -56,37 +56,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Choice.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="Course.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="CourseTopics_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="Crs_Topic.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="Department.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
-    <Compile Include="Exam.Context.cs">
+    <Compile Include="exam.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Exam.Context.tt</DependentUpon>
+      <DependentUpon>exam.Context.tt</DependentUpon>
     </Compile>
     <Compile Include="Exam.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
-    <Compile Include="Exam.Designer.cs">
+    <Compile Include="exam.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Exam.edmx</DependentUpon>
+      <DependentUpon>exam.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Exam1.cs">
+    <Compile Include="exam1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExamQuestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamQuestForm.Designer.cs">
+      <DependentUpon>ExamQuestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -95,75 +101,75 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Instructor.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="InstructorReport_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QandAexam_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="Question.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="ReportStudentExamAnswer_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="retrieveStdByDepID_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="SelectAllExam_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="SelectChoice_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="SelectExamByID_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="SelectInstructorByID_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="selectIns_Course_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="SelectQuestion_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="select_CourseTopic_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="select_course_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="select_Department_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="showQuestions_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="showStdCourse_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="Std_Course.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="Std_Exam_Ques.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="std_exam_quesSelect_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="Student.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="StudentForm.cs">
       <SubType>Form</SubType>
@@ -172,20 +178,23 @@
       <DependentUpon>StudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentReport_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="studSelect_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
     <Compile Include="userSelect_Result.cs">
-      <DependentUpon>Exam.tt</DependentUpon>
+      <DependentUpon>exam.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ExamQuestForm.resx">
+      <DependentUpon>ExamQuestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,13 +210,13 @@
     <EmbeddedResource Include="StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Exam.edmx">
+    <EntityDeploy Include="exam.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Exam.Designer.cs</LastGenOutput>
+      <LastGenOutput>exam.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="App.Config" />
-    <None Include="Exam.edmx.diagram">
-      <DependentUpon>Exam.edmx</DependentUpon>
+    <None Include="exam.edmx.diagram">
+      <DependentUpon>exam.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -224,15 +233,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Exam.Context.tt">
+    <Content Include="exam.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Exam.edmx</DependentUpon>
-      <LastGenOutput>Exam.Context.cs</LastGenOutput>
+      <DependentUpon>exam.edmx</DependentUpon>
+      <LastGenOutput>exam.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Exam.tt">
+    <Content Include="exam.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Exam.edmx</DependentUpon>
-      <LastGenOutput>Exam1.cs</LastGenOutput>
+      <DependentUpon>exam.edmx</DependentUpon>
+      <LastGenOutput>exam1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

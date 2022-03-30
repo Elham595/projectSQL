@@ -519,7 +519,7 @@
       <Parameter Name="numOfTrueFalse" Mode="In" Type="Int32" />
       <Parameter Name="numOfMCQ" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="GenerateExameByCourseName">
+    <FunctionImport Name="GenerateExameByCourseName" ReturnType="Collection(String)">
       <Parameter Name="Course" Mode="In" Type="String" />
       <Parameter Name="Ins_ID" Mode="In" Type="Int32" />
       <Parameter Name="Std_ID" Mode="In" Type="Int32" />
@@ -832,8 +832,8 @@
     <Property Type="Int32" Name="Ins_ID" Nullable="true" />
   </ComplexType>
   <ComplexType Name="selectIns_Course_Result">
-    <Property Type="Int32" Name="Ins_ID" Nullable="false" />
-    <Property Type="Int32" Name="Crs_ID" Nullable="false" />
+    <Property Type="String" Name="Crs_Name" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="Column1" Nullable="true" />
   </ComplexType>
   <ComplexType Name="SelectInstructorByID_Result">
     <Property Type="Int32" Name="Ins_ID" Nullable="false" />
