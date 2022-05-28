@@ -13,7 +13,7 @@ namespace login
     
     public partial class selectIns_Course_Result
     {
-        public int Ins_ID { get; set; }
-        public int Crs_ID { get; set; }
+        public string Crs_Name { get; set; }
+        public Nullable<int> Column1 { get; set; }
     }
 }
